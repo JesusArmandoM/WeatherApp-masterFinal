@@ -58,7 +58,7 @@ public class OpenWeatherMapApiCaller implements BaseApiCall {
                     public void onResponse(final JSONObject response) {
                         try {
                             Weather weather = new Weather(response);
-                            ((OpenWeatherMapCallback) callback).onResponse(weather);
+                            ((OpenWeatherMapCallback) callback.get()).onResponse(weather);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -67,7 +67,7 @@ public class OpenWeatherMapApiCaller implements BaseApiCall {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        ((OpenWeatherMapCallback) callback).onError();
+                        ((OpenWeatherMapCallback) callback.get()).onError();
                     }
                 });
         jsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(30000, 1, 1));

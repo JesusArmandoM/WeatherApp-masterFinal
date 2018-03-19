@@ -100,6 +100,21 @@ public class Weather {
         this.measured = measured;
     }
 
+    @Override
+    public String toString() {
+        return "Weather{" +
+                "condition='" + condition + '\'' +
+                ", description='" + description + '\'' +
+                ", degrees='" + degrees + '\'' +
+                ", wind='" + wind + '\'' +
+                ", cloudiness='" + cloudiness + '\'' +
+                ", pressure='" + pressure + '\'' +
+                ", humidity='" + humidity + '\'' +
+                ", sunrise='" + sunrise + '\'' +
+                ", measured='" + measured + '\'' +
+                '}';
+    }
+
     public void fromJson(JSONObject json) {
 
         parseCondition(json);
