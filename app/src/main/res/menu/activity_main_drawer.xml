@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/weather"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/weather" />
+
+    </group>
+
+    <item android:title="@string/Section">
+        <menu>
+            <item
+                android:id="@+id/logOut"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

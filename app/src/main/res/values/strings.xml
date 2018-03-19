@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="weather">Weather</string>
+    <string name="Section">Extras</string>
+
+    <string name="user">Armando Flores</string>
+    <string name="email">ArmanFlo105@gmail.com</string>
+
+    <string name="zip">USA Zip Code</string>
+    <string name="buttonzip">Confirm</string>
+    <string name="message_error">Check your US ZIP CODE Please</string>
+    <string name="internet_error">Check your Internet conection</string>
+
+
+
+
+
+</resources>
