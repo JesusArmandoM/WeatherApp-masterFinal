@@ -16,9 +16,6 @@
     <string name="buttonzip">Confirm</string>
     <string name="message_error">Check your US ZIP CODE Please</string>
     <string name="internet_error">Check your Internet conection</string>
-
-
-
-
+    <string name="measured">Measured: </string>
 
 </resources>

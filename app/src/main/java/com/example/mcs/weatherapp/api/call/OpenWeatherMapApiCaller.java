@@ -40,23 +40,18 @@ public class OpenWeatherMapApiCaller implements BaseApiCall {
 
     public void downloadData(String zipcode) {
 
-//        Uri END_POINT = Uri
-//                .parse(OpenWeatherMapConstants.BASE_URL)
-//                .buildUpon()
-//                .appendQueryParameter(OpenWeatherMapConstants.ZIP_QUERY_PARAMETER,
-//                        zipcode + OpenWeatherMapConstants.DEFAULT_LANGUAGE_PREFIX)
-//                .appendQueryParameter(OpenWeatherMapConstants.API_KEY_QUERY_PARAMETER,
-//                        OpenWeatherMapConstants.API_KEY_VALUE)
-//                .build();
-
-
-        String END_POINT = OpenWeatherMapConstants.BASE_URL +"?"+ OpenWeatherMapConstants.ZIP_QUERY_PARAMETER+"="+
-                     zipcode + OpenWeatherMapConstants.DEFAULT_LANGUAGE_PREFIX +"&"+ OpenWeatherMapConstants.API_KEY_QUERY_PARAMETER+"="+
-                       OpenWeatherMapConstants.API_KEY_VALUE;
+        Uri END_POINT = Uri
+                .parse(OpenWeatherMapConstants.BASE_URL)
+                .buildUpon()
+                .appendQueryParameter(OpenWeatherMapConstants.ZIP_QUERY_PARAMETER,
+                        zipcode + OpenWeatherMapConstants.DEFAULT_LANGUAGE_PREFIX)
+                .appendQueryParameter(OpenWeatherMapConstants.API_KEY_QUERY_PARAMETER,
+                        OpenWeatherMapConstants.API_KEY_VALUE)
+                .build();
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,
-                END_POINT,
+                END_POINT.toString(),
                 null,
                 new Response.Listener<JSONObject>() {
                     @Override

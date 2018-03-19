@@ -55,7 +55,7 @@
         android:layout_below="@+id/textView4"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="Sunshine and clouds mixed. A stray shower or thunderstorm is possible. High 91F. Winds SSW at 10 to 20 mph." />
+        />
 
 
             <TextView
@@ -293,11 +293,7 @@
 
             </LinearLayout>
 
-
-
         </RelativeLayout>
-
-
 
 
 </ScrollView>
